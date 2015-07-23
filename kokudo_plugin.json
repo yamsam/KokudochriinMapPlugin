@@ -1,0 +1,13 @@
+{
+    "Keys": ["kokudo"],
+    "Provider": "kokudo",
+    "Version": 100,
+    "Experimental": false,
+    "Features": [
+        "OnlineMappingFeature",
+        "OnlineGeocodingFeature",
+        "ReverseGeocodingFeature",
+        "OnlineRoutingFeature",
+        "OnlinePlacesFeature"
+    ]
+}
