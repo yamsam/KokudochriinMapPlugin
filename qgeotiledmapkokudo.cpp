@@ -35,15 +35,15 @@
 #include "qgeotiledmappingmanagerengineKokudo.h"
 #include <QtLocation/private/qgeotilespec_p.h>
 #include <QtLocation/private/qgeotilecache_p.h>
+#include <QStandardPaths>
+#include <QDir>
+#include <QStringList>
 
 QT_BEGIN_NAMESPACE
 
 QGeoTiledMapKokudo::QGeoTiledMapKokudo(QGeoTiledMappingManagerEngineKokudo *engine, QObject *parent)
 :   QGeoTiledMap(engine, parent), m_mapId(-1), m_customCopyright(engine->customCopyright())
 {
-    this->tileCache()->setMaxDiskUsage(200 * 1024 * 1024);
-//    this->tileCache()->setMaxMemoryUsage(10 * 1024 * 1024);
-//    this->tileCache()->setExtraTextureUsage(20 * 1024 * 1024);
 }
 
 QGeoTiledMapKokudo::~QGeoTiledMapKokudo()
